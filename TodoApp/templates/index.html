@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Todo List</h1>
+        </div>
+        <form method="POST" action="/add">
+            <input type="text" placeholder="Başlık", required name="title">
+            <textarea placeholder="İçerik", required name="content"></textarea>
+            <br>
+            <button type="submit">Ekle</button>
+        </form>
+        <div class="task-list">
+            {% for task in totalTask %}
+                <div class="task">
+                    <div class="task-name">
+                        <label for="task1">{{task[1]}}</label>
+                    </div>
+                    <div class="task-details">
+                        <p>{{(task[2])[0:100]}} ...</p>
+                    </div>
+                    <div class="task-actions">
+                        
+                    
+                        <button class="details-btn"><a href="{{ url_for('details', id=task[0])}}" style="text-decoration: none; color:white;">Detay</a> </button>
+                        <button class="delete-btn"> <a href="{{url_for('delete', id=task[0])}}" style="text-decoration: none; color:white;">Sil</a></button>
+                    </div>
+                </div>
+            {% endfor %}
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    background-color: #24252A;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #2D2E33;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+form input[type="text"], form textarea {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #44454A;
+    color: #fff;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #44454A;
+}
+
+.task-name input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-name label {
+    font-size: 18px;
+}
+
+.task-details {
+    margin: 10px 0;
+}
+
+.task-details p {
+    margin: 0;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-actions button {
+    padding: 5px 10px;
+}
+
+textarea {
+    width: 100px;
+    height: 100px;
+    resize: none;
+}
+
+.edit-btn {
+    height: 30px;
+    width: 90px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin: 2px;
+}
+
+.details-btn{
+    height: 30px;
+    width: 90px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin: 2px;
+}
+
+.delete-btn{
+    height: 30px;
+    width: 90px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin: 2px;
+    
+}

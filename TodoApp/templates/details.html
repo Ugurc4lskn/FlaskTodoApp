@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{query[1]}}</title>
+	<link rel="stylesheet" href="/static/details.css">
+</head>
+<body>
+	<div class="container">
+		<form action="/update" method="POST">
+			
+			<h1>{{query[1]}}</h1>
+			<label for="mesaj_id">Id</label>
+			<textarea name="taskid"  rows="1" readonly>{{query[0]}}</textarea>
+			<label for="mesaj_alani">İçerik</label>
+			<textarea name="contents" id="mesaj_alani" rows="20" >{{query[2]}}</textarea>
+			
+			<label for="onay_alani">Başlık</label>
+			<textarea name="titles" id="onay_alani" rows="1">{{query[1]}}</textarea>
+			<button type="submit" class="onayla-butonu">Düzenle</button>
+		</form>
+	</div>
+</body>
+</html>
